@@ -1,0 +1,81 @@
+import defaultTheme from 'tailwindcss/defaultTheme';
+import forms from '@tailwindcss/forms';
+import primeui from 'tailwindcss-primeui';
+
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: [
+        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
+        './storage/framework/views/*.php',
+        './resources/views/**/*.blade.php',
+        './resources/js/**/*.vue',
+    ],
+
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: ['Inter', ...defaultTheme.fontFamily.sans],
+                headline: ['Manrope'],
+                body: ['Inter'],
+                label: ['Inter'],
+            },
+            colors: {
+                'surface-container-highest': '#e0e3e5',
+                'on-error': '#ffffff',
+                'on-primary-fixed': '#001b3d',
+                'on-secondary-fixed-variant': '#324769',
+                'on-primary-fixed-variant': '#00468b',
+                'surface-bright': '#f7f9fb',
+                'error-container': '#ffdad6',
+                'primary-container': '#005fb8',
+                primary: '#00488d',
+                'surface-container-lowest': '#ffffff',
+                surface: '#f7f9fb',
+                error: '#ba1a1a',
+                'surface-container-high': '#e6e8ea',
+                'on-primary': '#ffffff',
+                'on-primary-container': '#cadcff',
+                'on-surface-variant': '#424752',
+                'on-secondary-fixed': '#011b3c',
+                'surface-variant': '#e0e3e5',
+                'surface-dim': '#d8dadc',
+                'outline-variant': '#c2c6d4',
+                'tertiary-fixed': '#ffdbcb',
+                'on-background': '#191c1e',
+                'on-surface': '#191c1e',
+                'secondary-fixed': '#d6e3ff',
+                'secondary-fixed-dim': '#b2c7f0',
+                'secondary-container': '#c0d5ff',
+                'tertiary-container': '#a04401',
+                secondary: '#4a5f83',
+                'inverse-surface': '#2d3133',
+                'on-tertiary-fixed': '#341100',
+                'on-tertiary-container': '#ffd1bc',
+                tertiary: '#7b3200',
+                'on-error-container': '#93000a',
+                background: '#f7f9fb',
+                'on-secondary-container': '#475c7f',
+                'surface-tint': '#005db5',
+                outline: '#727783',
+                'surface-container-low': '#f2f4f6',
+                'tertiary-fixed-dim': '#ffb691',
+                'inverse-primary': '#a8c8ff',
+                'on-tertiary': '#ffffff',
+                'primary-fixed': '#d6e3ff',
+                'inverse-on-surface': '#eff1f3',
+                'primary-fixed-dim': '#a8c8ff',
+                'on-secondary': '#ffffff',
+                'on-tertiary-fixed-variant': '#783100',
+                'surface-container': '#eceef0',
+            },
+            borderRadius: {
+                DEFAULT: '0.125rem',
+                lg: '0.25rem',
+                xl: '0.5rem',
+                full: '0.75rem',
+            },
+        },
+    },
+
+    plugins: [forms, primeui],
+};
