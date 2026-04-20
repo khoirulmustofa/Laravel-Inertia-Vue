@@ -33,6 +33,10 @@ Ensure you have the following installed:
 ```bash
 git clone https://github.com/khoirulmustofa/Laravel-Inertia-Vue.git
 cd Laravel-Inertia-Vue
+
+git add .
+git commit -m "Feat: primevue"
+git push -u origin main
 ```
 
 ### 3. Install Dependencies
