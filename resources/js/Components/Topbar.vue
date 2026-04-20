@@ -50,7 +50,7 @@ const handleLinkClick = (name) => {
 </script>
 
 <template>
-    <header class="sticky top-0 z-40 border-b border-outline-variant bg-surface/80 shadow-sm backdrop-blur-xl h-20 shrink-0">
+    <header class="sticky top-0 z-40 border-b border-outline-variant bg-surface/80 shadow-sm backdrop-blur-xl h-16 shrink-0">
         <div class="flex h-full w-full items-center justify-between px-6">
             <div class="flex items-center gap-4">
                

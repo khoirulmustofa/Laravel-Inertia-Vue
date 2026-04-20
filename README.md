@@ -37,6 +37,7 @@ cd Laravel-Inertia-Vue
 git add .
 git commit -m "Feat: primevue"
 git push -u origin main
+
 ```
 
 ### 3. Install Dependencies
