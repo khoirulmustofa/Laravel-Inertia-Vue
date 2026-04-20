@@ -43,7 +43,7 @@ onUnmounted(() => {
         <!-- Desktop Sidebar -->
       
         <!-- Mobile Drawer Navigation -->
-        <Drawer v-model:visible="isMobileMenuVisible" class="p-0 border-none bg-transparent" :pt="{
+        <Drawer v-model:visible="isMobileMenuVisible"  class="p-0 border-none bg-transparent" :pt="{
             root: { class: 'p-0 border-none' },
             header: { class: 'hidden' },
             content: { class: 'p-0 w-72 h-full' }
@@ -65,12 +65,12 @@ onUnmounted(() => {
                 <div class="flex-1">
                     <div class="mx-auto w-full">
                         <!-- Dynamic Header Slot -->
-                        <div v-if="$slots.header" class="px-8 pt-8 pb-4">
+                        <div v-if="$slots.header" class="px-4 pt-4 pb-4">
                             <slot name="header" />
                         </div>
 
                         <!-- Main Slot Content -->
-                        <div class="px-8 pb-12">
+                        <div class="px-4 pb-6">
                             <slot />
                         </div>
                     </div>

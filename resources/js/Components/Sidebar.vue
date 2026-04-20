@@ -98,11 +98,6 @@ const menuItems = ref([
                     >
                         <i :class="[item.icon, 'text-base shrink-0']"></i>
                         <span v-if="!collapsed" class="font-bold transition-opacity duration-300 whitespace-nowrap">{{ item.label }}</span>
-                        
-                        <!-- Tooltip-like effect for collapsed state if desired or just use PrimeVue tooltip -->
-                        <div v-if="collapsed" class="fixed left-20 bg-inverse-surface text-inverse-on-surface px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity ml-2 z-[100] whitespace-nowrap">
-                            {{ item.label }}
-                        </div>
                     </Link>
                     <div 
                         v-else
@@ -111,13 +106,10 @@ const menuItems = ref([
                             item.active ? 'bg-primary text-on-primary shadow-md' : 'text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface',
                             collapsed ? 'justify-center px-0 mx-2' : 'gap-3 px-4'
                         ]"
+                        v-tooltip.right="collapsed ? item.label : null"
                     >
                         <i :class="[item.icon, 'text-base shrink-0']"></i>
                         <span v-if="!collapsed" class="font-bold whitespace-nowrap">{{ item.label }}</span>
-                        
-                        <div v-if="collapsed" class="fixed left-20 bg-inverse-surface text-inverse-on-surface px-2 py-1 rounded text-xs opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity ml-2 z-[100] whitespace-nowrap">
-                            {{ item.label }}
-                        </div>
                     </div>
                 </template>
             </Menu>
