@@ -93,3 +93,10 @@ The Laravel framework is open-source software licensed under the [MIT license](h
 ```
 bash -c "source ~/.nvm/nvm.sh && nvm use --delete-prefix default && npm install primeicons"
 ```
+
+
+## laravel
+
+```
+php artisan make:model -m
+```
